@@ -2,6 +2,8 @@ import os
 from selenium import webdriver
 
 class Request(object):
+    '''class named Request that will be responsible for
+       getting the data from the weather website'''
     def __init__(self,base_url):
         self._phantomjs_path = os.path.join(os.curdir,
                                             'phantomjs/bin/phantomjs')
